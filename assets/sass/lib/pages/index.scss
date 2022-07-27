@@ -1,0 +1,33 @@
+.projet-info {
+    text-align: center;
+    padding: 15px 2.5rem;
+    @include roboto;
+    @include background-color;
+
+    @media #{$mobile} {
+        font-weight: lighter;
+
+        &__heading {
+
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+
+        &__description {
+
+            font-size: 1.13rem;
+
+        }
+
+        &__button {
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+
+
+    }
+}
+
+.proj-functioning {
+    padding: 1rem;
+}
