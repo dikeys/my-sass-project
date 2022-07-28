@@ -1,10 +1,9 @@
 .projet-info {
     text-align: center;
     padding: 15px 2.5rem;
-    @include roboto;
     @include background-color;
 
-    @media #{$mobile} {
+    @media #{$tablet} {
         font-weight: lighter;
 
         &__heading {
@@ -29,5 +28,43 @@
 }
 
 .proj-functioning {
-    padding: 1rem;
+    padding: 1.50rem;
+    padding-bottom: 5rem;
+
+    &__heading {
+        text-align: start;
+    }
+
+    button:hover i {
+        color: $primary;
+        background-color: lighten($primary, 35%);
+    }
+
+    button:hover,
+    i:nth-child(2) {
+        color: black;
+        background-color: lighten($primary, 35%);
+    }
+
+    span {
+        background-color: $primary;
+        padding: 0.2rem 0.4rem;
+        border-radius: 50%;
+        position: relative;
+        color: white;
+        top: 2.9rem;
+        right: .7rem;
+    }
+
+    i {
+        margin-right: 1.8rem;
+        font-size: larger;
+        color: map-get($colors, dark-gray);
+    }
+
+}
+
+.restaurant {
+    padding: 15px 2.5rem;
+    background-color: map-get($colors, gray);
 }

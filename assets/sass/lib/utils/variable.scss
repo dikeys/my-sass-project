@@ -2,9 +2,12 @@ $primary : #9356DC;
 $secondary : #FF79DA;
 $tertiary : #99E2D0;
 
-$colors : (gray:#eaeaea, white:white, black:black, lightbl: #454545, light-gray: #f6f6f6);
+$colors : (primary : #9356DC, secondary : #FF79DA, tertiary : #99E2D0, gray:#eaeaea, white:white, black:black, lightbl: #454545, light-gray: #f6f6f6, dark-gray:#868282);
 
 $mobile-breakpoint : 768px;
 $tablet-breakpoint : 992px;
 $mobile :"screen and (max-width: #{$mobile-breakpoint})";
 $tablet :"screen and (max-width: #{$tablet-breakpoint})";
+
+$positions:(top, left, right, bottom);
+$rounded-sizes : (sm:2px, md:17px, xl:67px, circle: 50%)

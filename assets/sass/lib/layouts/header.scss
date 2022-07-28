@@ -12,7 +12,7 @@
         @include background-color
     }
 
-    @media #{$mobile} {
+    @media #{$tablet} {
         display: block;
 
         &__logo {
@@ -28,9 +28,6 @@
             font-family: "roboto", sans serif;
             font-weight: bold;
 
-            &--bg-color {
-                @include bg-color(gray);
-            }
         }
 
         &__location i {

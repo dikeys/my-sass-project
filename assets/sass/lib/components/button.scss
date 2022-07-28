@@ -1,20 +1,72 @@
 .btn {
     padding: 1rem 1.3rem;
-    color: white;
+    width: 100%;
     text-decoration: none;
-    background: linear-gradient(to top, $primary, $secondary);
+    border: none;
 
-    &--rounded {
-        border-radius: 67px;
+
+
+    @for $sizeY from 1 to 15 {
+        &--py-#{""+$sizeY} {
+            padding-top: $sizeY * .25rem;
+            padding-bottom: $sizeY * .25rem;
+
+        }
+    }
+
+    @for $sizeL from 0 to 50 {
+        &--pl-#{""+$sizeL} {
+            padding-left: $sizeL * .25rem;
+        }
+    }
+
+    @for $sizeR from 0 to 50 {
+        &--pr-#{""+$sizeR} {
+            padding-right: $sizeR * .25rem;
+        }
+    }
+
+    @for $size from 0 to 50 {
+        &--mr-#{""+$size} {
+            margin-right: $size * .25rem;
+        }
+    }
+
+    @each $type,
+    $size in $rounded-sizes {
+        &--rounded-#{""+$type} {
+            border-radius: $size;
+        }
+    }
+
+    @each $colour,
+    $hex in $colors {
+        &--bg-#{""+$colour} {
+            background-color: $hex;
+        }
+    }
+
+    @each $colour,
+    $hex in $colors {
+        &--text-#{""+$colour} {
+            color: $hex;
+        }
     }
 
     &--shadow {
-        box-shadow: 4px 5px 5px map-get($colors, gray);
+        box-shadow: 1px 4px 8px map-get($colors, gray);
     }
+
+
+    @include background-linear($primary, $secondary);
 
     &--text-medium {
         font-weight: 400;
         font-size: 1.1rem;
+    }
+
+    &--hover:hover {
+        background: linear-gradient(to top, lighten($primary, 10%), lighten($secondary, 10%));
     }
 
 
