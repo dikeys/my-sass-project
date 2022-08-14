@@ -1,0 +1,26 @@
+.footer {
+    padding: 40px;
+    background-color: #343434;
+
+    &__logo {
+        font-family: #{$font-title-logo},
+        sans-serif;
+        color: white;
+    }
+
+    &__list {
+        padding: 0;
+
+        li {
+            margin-top: 12px;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+    &__icon {
+        margin-right: 12px;
+    }
+}

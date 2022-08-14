@@ -65,8 +65,59 @@
 }
 
 .restaurant {
-    padding: 3rem 2.5rem;
+    padding: 3rem 1.2rem;
     background-color: map-get($colors, gray);
 
     &__heading {}
+
+    &__card {
+        border-radius: 23px;
+        position: relative;
+        overflow: hidden;
+        margin: 21px 0px;
+    }
+
+    &__badge {
+        background-color: #98e1cf;
+        color: #129172;
+        padding: 9px;
+        position: absolute;
+        right: 17px;
+        top: 14px;
+
+        &--rounded {
+            border-radius: 3px;
+        }
+
+    }
+
+
+    &__img {
+        object-fit: cover;
+        object-position: 50% 61%;
+        height: 180px;
+    }
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+    }
+
+    &__name,
+    &__location {
+        margin: 0
+    }
+
+    &__location {
+        margin-top: 7px;
+
+        &--color-gray {
+            color: map-get($colors, dark-gray);
+        }
+    }
+
+
 }

@@ -8,6 +8,18 @@ $mobile-breakpoint : 768px;
 $tablet-breakpoint : 992px;
 $mobile :"screen and (max-width: #{$mobile-breakpoint})";
 $tablet :"screen and (max-width: #{$tablet-breakpoint})";
-
+$font-title-logo : "Shrikhand";
 $positions:(top, left, right, bottom);
-$rounded-sizes : (sm:2px, md:17px, xl:67px, circle: 50%)
+$rounded-sizes : (sm:2px, md:17px, xl:67px, circle: 50%);
+
+$weight: (100,
+    200,
+    300,
+    400,
+    /* normal */
+    500,
+    600,
+    700,
+    /* gras */
+    800,
+    900, )

@@ -1,6 +1,5 @@
 .card {
-    padding: 2px;
+
     @include bg-color(white);
     box-shadow: -3px 3px 0.6em rgb(139, 139, 139);
-
 }
