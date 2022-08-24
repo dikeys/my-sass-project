@@ -1,0 +1,89 @@
+main {
+    background-color: map-get($colors, light-gray);
+}
+
+.dishess {
+    @include rounded-top(40);
+    position: relative;
+    bottom: 46px;
+    background-color: map-get($colors, light-gray);
+    padding: 25px 14px;
+
+    &__composition {
+        margin-bottom: 13px;
+    }
+
+    &__composition:not(:nth-child(2)) {
+        margin-top: 45px;
+    }
+
+
+    &__accompaniement {
+        color: map-get($colors, dark-gray);
+
+
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-title-logo, sans-serif;
+        font-size: 0.9rem;
+    }
+
+
+    &__heading {
+        font-family: $font-text, sans serif;
+        margin-left: 6px;
+        margin-bottom: 14px;
+
+
+        &--uppercase {
+            text-transform: uppercase;
+        }
+
+        &::after {
+            content: "";
+            width: 43px;
+            margin-top: 3px;
+            height: 3px;
+            display: block;
+            background-color: #99E2D0;
+        }
+
+
+    }
+
+
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+
+        border-radius: map-get($rounded-sizes, md);
+
+        &:not(:nth-child(2)) {
+            margin-top: 15px;
+        }
+    }
+
+    &__content {
+        h4 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__btn {
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+}

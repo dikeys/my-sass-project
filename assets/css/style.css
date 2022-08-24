@@ -368,203 +368,203 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.m-0 {
+.font-0 {
   font-size: 0rem;
 }
 
-.m-1 {
+.font-1 {
   font-size: 0.25rem;
 }
 
-.m-2 {
+.font-2 {
   font-size: 0.5rem;
 }
 
-.m-3 {
+.font-3 {
   font-size: 0.75rem;
 }
 
-.m-4 {
+.font-4 {
   font-size: 1rem;
 }
 
-.m-5 {
+.font-5 {
   font-size: 1.25rem;
 }
 
-.m-6 {
+.font-6 {
   font-size: 1.5rem;
 }
 
-.m-7 {
+.font-7 {
   font-size: 1.75rem;
 }
 
-.m-8 {
+.font-8 {
   font-size: 2rem;
 }
 
-.m-9 {
+.font-9 {
   font-size: 2.25rem;
 }
 
-.m-10 {
+.font-10 {
   font-size: 2.5rem;
 }
 
-.m-11 {
+.font-11 {
   font-size: 2.75rem;
 }
 
-.m-12 {
+.font-12 {
   font-size: 3rem;
 }
 
-.m-13 {
+.font-13 {
   font-size: 3.25rem;
 }
 
-.m-14 {
+.font-14 {
   font-size: 3.5rem;
 }
 
-.m-15 {
+.font-15 {
   font-size: 3.75rem;
 }
 
-.m-16 {
+.font-16 {
   font-size: 4rem;
 }
 
-.m-17 {
+.font-17 {
   font-size: 4.25rem;
 }
 
-.m-18 {
+.font-18 {
   font-size: 4.5rem;
 }
 
-.m-19 {
+.font-19 {
   font-size: 4.75rem;
 }
 
-.m-20 {
+.font-20 {
   font-size: 5rem;
 }
 
-.m-21 {
+.font-21 {
   font-size: 5.25rem;
 }
 
-.m-22 {
+.font-22 {
   font-size: 5.5rem;
 }
 
-.m-23 {
+.font-23 {
   font-size: 5.75rem;
 }
 
-.m-24 {
+.font-24 {
   font-size: 6rem;
 }
 
-.m-25 {
+.font-25 {
   font-size: 6.25rem;
 }
 
-.m-26 {
+.font-26 {
   font-size: 6.5rem;
 }
 
-.m-27 {
+.font-27 {
   font-size: 6.75rem;
 }
 
-.m-28 {
+.font-28 {
   font-size: 7rem;
 }
 
-.m-29 {
+.font-29 {
   font-size: 7.25rem;
 }
 
-.m-30 {
+.font-30 {
   font-size: 7.5rem;
 }
 
-.m-31 {
+.font-31 {
   font-size: 7.75rem;
 }
 
-.m-32 {
+.font-32 {
   font-size: 8rem;
 }
 
-.m-33 {
+.font-33 {
   font-size: 8.25rem;
 }
 
-.m-34 {
+.font-34 {
   font-size: 8.5rem;
 }
 
-.m-35 {
+.font-35 {
   font-size: 8.75rem;
 }
 
-.m-36 {
+.font-36 {
   font-size: 9rem;
 }
 
-.m-37 {
+.font-37 {
   font-size: 9.25rem;
 }
 
-.m-38 {
+.font-38 {
   font-size: 9.5rem;
 }
 
-.m-39 {
+.font-39 {
   font-size: 9.75rem;
 }
 
-.m-40 {
+.font-40 {
   font-size: 10rem;
 }
 
-.m-41 {
+.font-41 {
   font-size: 10.25rem;
 }
 
-.m-42 {
+.font-42 {
   font-size: 10.5rem;
 }
 
-.m-43 {
+.font-43 {
   font-size: 10.75rem;
 }
 
-.m-44 {
+.font-44 {
   font-size: 11rem;
 }
 
-.m-45 {
+.font-45 {
   font-size: 11.25rem;
 }
 
-.m-46 {
+.font-46 {
   font-size: 11.5rem;
 }
 
-.m-47 {
+.font-47 {
   font-size: 11.75rem;
 }
 
-.m-48 {
+.font-48 {
   font-size: 12rem;
 }
 
-.m-49 {
+.font-49 {
   font-size: 12.25rem;
 }
 
@@ -606,7 +606,7 @@ body {
 
 .card {
   background-color: white;
-  box-shadow: -3px 3px 0.6em rgb(139, 139, 139);
+  box-shadow: -3px 3px 0.6em rgb(221, 217, 217);
 }
 
 .btn {
@@ -670,6 +670,48 @@ body {
 .btn--py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+.btn--w-1 {
+  width: 5%;
+}
+.btn--w-2 {
+  width: 10%;
+}
+.btn--w-3 {
+  width: 15%;
+}
+.btn--w-4 {
+  width: 20%;
+}
+.btn--w-5 {
+  width: 25%;
+}
+.btn--w-6 {
+  width: 30%;
+}
+.btn--w-7 {
+  width: 35%;
+}
+.btn--w-8 {
+  width: 40%;
+}
+.btn--w-9 {
+  width: 45%;
+}
+.btn--w-10 {
+  width: 50%;
+}
+.btn--w-11 {
+  width: 55%;
+}
+.btn--w-12 {
+  width: 60%;
+}
+.btn--w-13 {
+  width: 65%;
+}
+.btn--w-14 {
+  width: 70%;
 }
 .btn--pl-0 {
   padding-left: 0rem;
@@ -1250,12 +1292,15 @@ body {
 .header__location--bg-dark-gray {
   background-color: #868282;
 }
+.header__icon {
+  float: left;
+  margin-left: 12px;
+}
 @media screen and (max-width: 992px) {
   .header {
     display: block;
   }
   .header__logo {
-    box-shadow: 1.95px 1.95px 2px #d5d0d0;
     margin-bottom: 2px;
     padding: 7px;
   }
@@ -1267,6 +1312,7 @@ body {
     font-size: 16px;
     font-family: "roboto", sans serif;
     font-weight: bold;
+    box-shadow: 1.95px -1px 2px #d5d0d0;
   }
   .header__location i {
     margin-right: 24px;
@@ -1418,6 +1464,71 @@ body {
 }
 .restaurant__location--color-gray {
   color: #868282;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
+.dishess {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  bottom: 46px;
+  background-color: #f6f6f6;
+  padding: 25px 14px;
+}
+.dishess__composition {
+  margin-bottom: 13px;
+}
+.dishess__composition:not(:nth-child(2)) {
+  margin-top: 45px;
+}
+.dishess__accompaniement {
+  color: #868282;
+}
+.dishess__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 0.9rem;
+}
+.dishess__heading {
+  font-family: "Roboto", sans serif;
+  margin-left: 6px;
+  margin-bottom: 14px;
+}
+.dishess__heading--uppercase {
+  text-transform: uppercase;
+}
+.dishess__heading::after {
+  content: "";
+  width: 43px;
+  margin-top: 3px;
+  height: 3px;
+  display: block;
+  background-color: #99E2D0;
+}
+.dishess__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 17px;
+}
+.dishess__card:not(:nth-child(2)) {
+  margin-top: 15px;
+}
+.dishess__content h4 {
+  margin: 0;
+}
+.dishess__content p {
+  margin: 0;
+}
+.dishess__btn {
+  margin-top: 50px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

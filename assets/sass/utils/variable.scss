@@ -9,6 +9,7 @@ $tablet-breakpoint : 992px;
 $mobile :"screen and (max-width: #{$mobile-breakpoint})";
 $tablet :"screen and (max-width: #{$tablet-breakpoint})";
 $font-title-logo : "Shrikhand";
+$font-text: "Roboto";
 $positions:(top, left, right, bottom);
 $rounded-sizes : (sm:2px, md:17px, xl:67px, circle: 50%);
 

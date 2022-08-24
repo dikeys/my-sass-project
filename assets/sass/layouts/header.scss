@@ -12,17 +12,23 @@
         @include background-color
     }
 
+    &__icon {
+        float: left;
+        margin-left: 12px;
+    }
+
     @media #{$tablet} {
         display: block;
 
         &__logo {
 
-            box-shadow: 1.95px 1.95px 2px #d5d0d0;
+
             margin-bottom: 2px;
             padding: 7px;
         }
 
         img {
+
             width: 45%;
         }
 
@@ -31,6 +37,7 @@
             font-size: 16px;
             font-family: "roboto", sans serif;
             font-weight: bold;
+            box-shadow: 1.95px -1px 2px #d5d0d0;
 
         }
 

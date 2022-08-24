@@ -43,7 +43,7 @@
 
 }
 
-@mixin rounded-top {
-    border-top-left-radius: 23px;
-    border-top-right-radius: 23px;
+@mixin rounded-top($size) {
+    border-top-left-radius: $size + 0px;
+    border-top-right-radius: $size + 0px;
 }
