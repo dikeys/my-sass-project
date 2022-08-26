@@ -21,6 +21,11 @@ main {
     background-color: map-get($colors, light-gray);
     padding: 25px 14px;
 
+    &__img-cover {
+        object-fit: cover;
+        height: 253px;
+    }
+
     &__card {
         display: flex;
         justify-content: space-between;
@@ -155,6 +160,8 @@ main {
         text-align: center;
 
     }
+
+
 
 }
 

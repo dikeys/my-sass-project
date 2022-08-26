@@ -25,6 +25,19 @@
 
 
     }
+
+    @media #{$large} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: map-get($colors, gray);
+
+        &__heading {
+            font-size: 70px;
+            width: 50%;
+        }
+    }
 }
 
 .proj-functioning {
@@ -60,6 +73,15 @@
         margin-right: 1.8rem;
         font-size: larger;
         color: map-get($colors, dark-gray);
+    }
+
+    @media #{$large} {
+
+        &__button {
+            width: 30%;
+            float: left;
+            margin: 20px;
+        }
     }
 
 }

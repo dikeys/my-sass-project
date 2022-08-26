@@ -39,11 +39,12 @@
             font-weight: bold;
             box-shadow: 1.95px -1px 2px #d5d0d0;
 
+            &__icon {
+                margin-right: 24px;
+            }
+
         }
 
-        &__location i {
-            margin-right: 24px;
-        }
 
         &__location a {
             text-decoration: none;
@@ -51,7 +52,21 @@
             margin-right: 24px;
         }
 
+
     }
 
+    @media #{$large} {
+        margin: 0 30px 0 12px;
+
+
+        &__location {
+            background: white;
+            margin-right: 30px;
+
+            &__icon {
+                margin-right: 24px;
+            }
+        }
+    }
 
 }

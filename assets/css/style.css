@@ -1419,12 +1419,24 @@ body {
     font-weight: bold;
     box-shadow: 1.95px -1px 2px #d5d0d0;
   }
-  .header__location i {
+  .header__location__icon {
     margin-right: 24px;
   }
   .header__location a {
     text-decoration: none;
     color: #454545;
+    margin-right: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    margin: 0 30px 0 12px;
+  }
+  .header__location {
+    background: white;
+    margin-right: 30px;
+  }
+  .header__location__icon {
     margin-right: 24px;
   }
 }
@@ -1500,6 +1512,19 @@ body {
     margin-bottom: 5rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .projet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+  }
+  .projet-info__heading {
+    font-size: 70px;
+    width: 50%;
+  }
+}
 
 .proj-functioning {
   padding: 1.5rem;
@@ -1530,6 +1555,13 @@ body {
   margin-right: 1.8rem;
   font-size: larger;
   color: #868282;
+}
+@media screen and (min-width: 1024px) {
+  .proj-functioning__button {
+    width: 30%;
+    float: left;
+    margin: 20px;
+  }
 }
 
 .restaurant {
@@ -1593,6 +1625,10 @@ main {
   bottom: 46px;
   background-color: #f6f6f6;
   padding: 25px 14px;
+}
+.dishess__img-cover {
+  object-fit: cover;
+  height: 253px;
 }
 .dishess__card {
   display: flex;
