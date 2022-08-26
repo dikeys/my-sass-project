@@ -1202,6 +1202,9 @@ body {
 .btn--bg-dark-gray {
   background-color: #868282;
 }
+.btn--bg-transparent {
+  background-color: transparent;
+}
 .btn--text-primary {
   color: #9356DC;
 }
@@ -1229,8 +1232,14 @@ body {
 .btn--text-dark-gray {
   color: #868282;
 }
+.btn--text-transparent {
+  color: transparent;
+}
 .btn--shadow {
   box-shadow: 1px 4px 8px #eaeaea;
+}
+.btn--border-none {
+  border: none;
 }
 .btn--background-linear-top {
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -1250,6 +1259,100 @@ body {
 }
 .btn--hover:hover {
   background: linear-gradient(to top, #ae80e5, #fface8);
+}
+
+@keyframes dash {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart {
+  color: grey;
+  font-size: 25px;
+}
+.heart:hover {
+  animation: dash 1s;
+  transition: opacity 7s;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes loader-anim {
+  0% {
+    background: white;
+    opacity: 1;
+    z-index: 1;
+  }
+  33% {
+    background: white;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  66% {
+    background: white;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  100% {
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    z-index: 1;
+  }
+}
+@keyframes loader-icon {
+  0% {
+    color: #9356DC;
+    opacity: 1;
+  }
+  33% {
+    color: #FF79DA;
+    transform: translateX(20%);
+    opacity: 0.9;
+  }
+  66% {
+    opacity: 0.9;
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(100%);
+    background: white;
+    opacity: 0;
+    color: #99E2D0;
+    visibility: hidden;
+    display: none;
+    z-index: -1220;
+  }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9999;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  animation: loader-anim 3s;
+}
+.loader__icon {
+  width: 100%;
+  animation: loader-icon 3s;
+  font-size: 60px;
+  margin-left: 50px;
 }
 
 .header {
@@ -1291,6 +1394,9 @@ body {
 }
 .header__location--bg-dark-gray {
   background-color: #868282;
+}
+.header__location--bg-transparent {
+  background-color: transparent;
 }
 .header__icon {
   float: left;
@@ -1375,6 +1481,9 @@ body {
 }
 .projet-info--bg-dark-gray {
   background-color: #868282;
+}
+.projet-info--bg-transparent {
+  background-color: transparent;
 }
 @media screen and (max-width: 992px) {
   .projet-info {

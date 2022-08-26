@@ -64,6 +64,9 @@
         box-shadow: 1px 4px 8px map-get($colors, gray);
     }
 
+    &--border-none {
+        border: none
+    }
 
     @include background-linear($primary, $secondary);
 

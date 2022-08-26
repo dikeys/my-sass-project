@@ -1,0 +1,35 @@
+@keyframes dash {
+    0% {
+        opacity: .2;
+    }
+
+    30% {
+        opacity: .5;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.heart {
+    color: grey;
+    font-size: 25px;
+
+    &:hover {
+        animation: dash 1s;
+        transition: opacity 7s;
+        background: linear-gradient($primary, $secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+
+
+    }
+}
+
+.heart-2 {
+    // stroke: red;
+}
