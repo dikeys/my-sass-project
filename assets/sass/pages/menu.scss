@@ -1,8 +1,14 @@
-// @keyframes dishess-display {
-    //     0%{
-    //         height: ;
-    //     }
-    // }
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 main {
     background-color: map-get($colors, light-gray);
@@ -15,8 +21,41 @@ main {
     background-color: map-get($colors, light-gray);
     padding: 25px 14px;
 
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        opacity: 0;
+        border-radius: map-get($rounded-sizes, md);
+        animation: display 2s forwards;
+        overflow: hidden;
+
+        &:not(:nth-child(2)) {
+            margin-top: 15px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        h4 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
     &__composition {
+
         margin-bottom: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+
     }
 
     &__composition:not(:nth-child(2)) {
@@ -26,6 +65,11 @@ main {
 
     &__accompaniement {
         color: map-get($colors, dark-gray);
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
 
 
     }
@@ -59,32 +103,26 @@ main {
         }
 
 
+
+
     }
 
-
-
-    &__card {
+    &__check {
+        height: 70px;
+        width: 60px;
+        // opacity: 0;
+        background-color: $tertiary;
+        margin-left: 25px;
+        // margin-right: -70px;
+        border-radius: 0 10px 10px 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 12px;
-
-        border-radius: map-get($rounded-sizes, md);
-
-        &:not(:nth-child(2)) {
-            margin-top: 15px;
-        }
+        justify-content: center;
+        transition: all 0.7s ease-in-out;
+        // transform: translateX(-20px);
     }
 
-    &__content {
-        h4 {
-            margin: 0;
-        }
 
-        p {
-            margin: 0;
-        }
-    }
 
     &__btn {
         margin-top: 50px;
@@ -92,4 +130,20 @@ main {
 
     }
 
+}
+
+.delay1 {
+    animation-delay: .1s;
+}
+
+.delay2 {
+    animation-delay: .6s;
+}
+
+.delay3 {
+    animation-delay: 1.3s;
+}
+
+.delay4 {
+    animation-delay: 3s;
 }

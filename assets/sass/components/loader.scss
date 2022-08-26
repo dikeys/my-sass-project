@@ -36,11 +36,12 @@
     33% {
         color: $secondary;
         transform: translateX(20%);
-        opacity: .9;
+        transition: transform .5s;
+
     }
 
     66% {
-        opacity: .9;
+
         transform: translateX(50%);
 
     }
@@ -72,7 +73,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    animation: loader-anim 3s;
+    animation: loader-anim 3s forwards;
 
     &__icon {
         width: 100%;

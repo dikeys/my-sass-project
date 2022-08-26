@@ -1318,10 +1318,9 @@ body {
   33% {
     color: #FF79DA;
     transform: translateX(20%);
-    opacity: 0.9;
+    transition: transform 0.5s;
   }
   66% {
-    opacity: 0.9;
     transform: translateX(50%);
   }
   100% {
@@ -1346,7 +1345,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  animation: loader-anim 3s;
+  animation: loader-anim 3s forwards;
 }
 .loader__icon {
   width: 100%;
@@ -1575,6 +1574,14 @@ body {
   color: #868282;
 }
 
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 main {
   background-color: #f6f6f6;
 }
@@ -1587,14 +1594,45 @@ main {
   background-color: #f6f6f6;
   padding: 25px 14px;
 }
+.dishess__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  opacity: 0;
+  border-radius: 17px;
+  animation: display 2s forwards;
+  overflow: hidden;
+}
+.dishess__card:not(:nth-child(2)) {
+  margin-top: 15px;
+}
+.dishess__content {
+  width: 100%;
+}
+.dishess__content h4 {
+  margin: 0;
+}
+.dishess__content p {
+  margin: 0;
+}
 .dishess__composition {
   margin-bottom: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 .dishess__composition:not(:nth-child(2)) {
   margin-top: 45px;
 }
 .dishess__accompaniement {
   color: #868282;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 .dishess__title {
   display: flex;
@@ -1619,25 +1657,36 @@ main {
   display: block;
   background-color: #99E2D0;
 }
-.dishess__card {
+.dishess__check {
+  height: 70px;
+  width: 60px;
+  background-color: #99E2D0;
+  margin-left: 25px;
+  border-radius: 0 10px 10px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px;
-  border-radius: 17px;
-}
-.dishess__card:not(:nth-child(2)) {
-  margin-top: 15px;
-}
-.dishess__content h4 {
-  margin: 0;
-}
-.dishess__content p {
-  margin: 0;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
 }
 .dishess__btn {
   margin-top: 50px;
   text-align: center;
+}
+
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.6s;
+}
+
+.delay3 {
+  animation-delay: 1.3s;
+}
+
+.delay4 {
+  animation-delay: 3s;
 }
 
 /*# sourceMappingURL=style.css.map */
