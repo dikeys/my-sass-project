@@ -1598,7 +1598,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
   opacity: 0;
   border-radius: 17px;
   animation: display 2s forwards;
@@ -1607,8 +1606,20 @@ main {
 .dishess__card:not(:nth-child(2)) {
   margin-top: 15px;
 }
+.dishess__card:hover .dishess__content {
+  width: 70%;
+}
+.dishess__card:hover .dishess__check {
+  margin-right: 0px;
+}
+.dishess__card:hover .dishess__check__icon {
+  transform: rotate(0deg);
+  transition: all 0.7s ease-in-out;
+  opacity: 1;
+}
 .dishess__content {
   width: 100%;
+  margin: 12px 0 12px 12px;
 }
 .dishess__content h4 {
   margin: 0;
@@ -1618,13 +1629,16 @@ main {
 }
 .dishess__composition {
   margin-bottom: 13px;
+}
+.dishess__composition:not(:nth-child(2)) {
+  margin-top: 45px;
+}
+.dishess__name {
+  width: 95%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
-}
-.dishess__composition:not(:nth-child(2)) {
-  margin-top: 45px;
 }
 .dishess__accompaniement {
   color: #868282;
@@ -1661,12 +1675,17 @@ main {
   height: 70px;
   width: 60px;
   background-color: #99E2D0;
-  margin-left: 25px;
-  border-radius: 0 10px 10px 0;
+  margin-left: 10px;
+  margin-right: -54px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.7s ease-in-out;
+  color: white;
+}
+.dishess__check__icon {
+  transform: rotate(100deg);
+  opacity: 0.3;
 }
 .dishess__btn {
   margin-top: 50px;
