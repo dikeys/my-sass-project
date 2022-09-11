@@ -77,9 +77,12 @@
 
     @media #{$large} {
 
+
+        display: flex;
+        padding-bottom: 2rem;
+
         &__button {
             width: 30%;
-            float: left;
             margin: 20px;
         }
     }
